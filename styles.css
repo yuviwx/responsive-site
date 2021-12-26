@@ -1,0 +1,136 @@
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: lightsalmon;
+  }
+
+header, footer{
+    background-color: teal;
+    width: 100%;
+    display: flex;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 1.5rem 0 0;
+    color: lightsalmon;
+    display: inline-block;
+}
+
+#intro{
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+}
+
+#intro h1{
+    color: coral;
+    font-size: 2rem;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    background-position: center;
+    padding: 2rem;
+}
+
+#summary,
+#testimonial,
+.photos,
+#meetup {
+  margin: 4em auto;
+}
+
+#summary{
+    padding: 0 1rem;
+}
+
+#summary h2{
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+#summary p{
+    color: white;
+}
+
+.photos{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photos img{
+    width: 30%;
+    margin: 1.5%;
+}
+
+#testimonial{
+    height: 20rem;
+    background-color: teal;
+    color: yellow;
+    padding: 0 1rem;
+    padding-top: 1rem;
+}
+
+#testimonial h1{
+    font-size: 2.5rem;
+}
+
+#testimonial p{}
+
+#meetup{
+    margin-bottom: 2rem;
+}
+
+#meetup h1{
+    font-size: 2rem;
+    color: yellow;
+    text-align: center;
+}
+
+#meetup img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        max-height: 200px;
+        padding-top: 1rem;
+    }
+
+    #summary,
+#testimonial,
+.photos,
+#meetup {
+  margin: 2.5em auto;
+}
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    .photos{
+        flex-flow: column nowrap;
+    }
+    
+    .photos img{
+        width: 80%;
+        height: auto;
+    }
+}
