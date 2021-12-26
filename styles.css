@@ -34,6 +34,9 @@ nav ul li{
     align-items: stretch;
     flex-direction: column;
     text-align: center;
+    background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/responsive-club-site/img/runner-splash.jpg");
+    background-position: center;
+    background-repeat: none;
 }
 
 #intro h1{
